@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    .formreg {
+      border: 2px solid black;
+      margin: auto;
+      text-align: left;
+      width: 40%;
+      padding: 20px;
+      background:linear-gradient(to bottom, #dbda82, #eb83c7);
+
+    }
+    h1{
+      margin:auto;
+      text-align: center;
+      color: blue;
+    }
+
+    /* Style labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Style input containers */
+    .input-container {
+      display: flex; /* Use flexbox to align label and input */
+      align-items: center; /* Center vertically within the container */
+      margin-bottom: 10px;
+     
+      text-align: center;
+    }
+
+    /* Style inputs */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 80%;
+      margin:auto;
+      /* text-align: center; */
+    }
+
+    /* Style checkboxes */
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid black;
+      cursor: pointer;
+      margin: auto;
+      text-align: center;
+      margin-left: 250px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="formreg">
+    <h1>Registration Form</h1>
+    <br>
+    <form action="#" method="post">
+      <div class="input-container">
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname">
+      </div>
+
+      <div class="input-container">
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname">
+      </div>
+
+      <div class="input-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="input-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+
+      <div class="input-container">
+        <label for="repassword">Re-enter password:</label>
+        <input type="password" id="repassword" name="repassword">
+      </div>
+
+      <div class="input-container">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="input-container">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      </div>
+
+      <div class="input-container">
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="input-container">
+        <label for="address">Address:</label>
+        <textarea name="address" id="address"></textarea>
+      </div>
+
+      <div class="input-container">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+      </div>
+
+      <div class="input-container">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+      </div>
+
+      <div class="input-container">
+        <label for="languages">Languages known:</label>
+        <input type="checkbox" name="languages[]" value="English"> English
+        <input type="checkbox" name="languages[]" value="Kannada"> Kannada
+        <input type="checkbox" name="languages[]" value="Hindi"> Hindi
+        <input type="checkbox" name="languages[]" value="Telugu"> Telugu
+      </div>
+      <div class="input-container">
+        <input type="checkbox" name="languages[]" value="accept"> Hereby I declare all the given details are true
+      </div>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>

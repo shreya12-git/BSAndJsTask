@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jstask4</title>
+</head>
+<body>
+    jstask4
+    <button onclick="date()">Show Date</button>
+    <p id="date"></p>
+    <button onclick="time()">Show Time</button>
+    <p id="time"></p>
+    <script>
+        const now = new Date();
+        function date() {
+            document.getElementById("date").innerHTML = `${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;   
+        }
+        function time() {
+            document.getElementById("time").innerHTML = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;    
+        }
+
+        
+      </script
+</body>
+</html>
